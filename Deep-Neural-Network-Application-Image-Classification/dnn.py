@@ -179,9 +179,20 @@ def L_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 30
     
     return parameters
 
-# parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500, print_cost = True)
+parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500, print_cost = True)
 
 # pred_train = predict(train_x, train_y, parameters)
 
 # pred_test = predict(test_x, test_y, parameters)
 
+# test with your image
+my_image = "my_image.jpeg" # change this to the name of your image file 
+my_label_y = [0] # the true class of your image (1 -> cat, 0 -> non-cat)
+
+fname = "images/" + my_image
+image = np.array(plt.imread(fname))
+my_image = skimage.transform.resize(image, output_shape=(num_px,num_px)).reshape((num_px*num_px*3,1))
+my_predicted_image = predict(my_image, my_label_y, parameters)
+
+plt.imshow(image)
+print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
