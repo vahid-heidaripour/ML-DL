@@ -2,12 +2,16 @@
 Deep Learning models have so much flexibility and capacity that overfitting can be a serious problem, if the training dataset is not big enough. Sure it does well on the training set, but the learned network doesn't generalize to new examples that it has never seen!
 
 Problem Statement: You have just been hired as an AI expert by the French Football Corporation. They would like you to recommend positions where France's goal keeper should kick the ball so that the French team's players can then hit it with their head.
+
 ![](images/field_kiank.png)
+
 They give you the following 2D dataset from France's past 10 games.
 ```
 train_X, train_Y, test_X, test_Y = load_2D_dataset()
 ```
+
 ![](images/Unknown.png)
+
 Each dot corresponds to a position on the football field where a football player has hit the ball with his/her head after the French goal keeper has shot the ball from the left side of the football field.
 	- If the dot is blue, it means the French player managed to hit the ball with his/her head
 	- If the dot is red, it means the other team's player hit the ball with their head
@@ -31,7 +35,9 @@ Cost after iteration 0: 0.6557412523481002
 Cost after iteration 10000: 0.16329987525724213
 
 Cost after iteration 20000: 0.1385164242326018
+
 ![](images/Unknown-2.png)
+
 On the training set:
 
 Accuracy: 0.9478672985781991
@@ -49,6 +55,7 @@ axes.set_ylim([-0.75,0.65])
 plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 ![](images/Unknown-3.png)
+
 The non-regularized model is obviously overfitting the training set. It is fitting the noisy points!
 
 ## 2 - L2 Regularization
@@ -71,7 +78,9 @@ Cost after iteration 0: 0.6974484493131264
 Cost after iteration 10000: 0.2684918873282239
 
 Cost after iteration 20000: 0.26809163371273004
+
 ![](images/Unknown-4.png)
+
 On the train set:
 
 Accuracy: 0.9383886255924171
@@ -90,6 +99,7 @@ axes.set_xlim([-0.75,0.40])
 axes.set_ylim([-0.75,0.65])
 plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
+
 ![](images/Unknown-5.png)
 
 ## 3 - Dropout
@@ -111,7 +121,9 @@ Cost after iteration 0: 0.6543912405149825
 Cost after iteration 10000: 0.061016986574905605
 
 Cost after iteration 20000: 0.060582435798513114
+
 ![](images/Unknown-6.png)
+
 On the train set:
 
 Accuracy: 0.9289099526066351
@@ -130,6 +142,7 @@ axes.set_xlim([-0.75,0.40])
 axes.set_ylim([-0.75,0.65])
 plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
+
 ![](images/Unknown-7.png)
 
 
