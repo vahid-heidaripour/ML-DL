@@ -73,7 +73,7 @@ Cost after iteration 2300: 0.05336140348560562
 
 Cost after iteration 2400: 0.04855478562877025
 
-![](images/figure_1.png)
+![](images/Figure_1.png)
 
 ```
 predictions_train = predict(train_x, train_y, parameters)
@@ -142,7 +142,7 @@ Cost after iteration 2300: 0.100897
 
 Cost after iteration 2400: 0.092878
 
-![](images/figure_2.png)
+![](images/Figure_2.png)
 
 ```
 pred_train = predict(train_x, train_y, parameters)
