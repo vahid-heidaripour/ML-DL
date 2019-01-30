@@ -62,6 +62,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 ### Summary
 | **optimization method** | **accuracy** | **cost shape** |
+| :---------------------: | :----------: | :------------: |
 | Gradient descent | 79.7% | oscillations |
 | Momentum | 79.7% | oscillations | 
 | Adam | 94% | smoother |
