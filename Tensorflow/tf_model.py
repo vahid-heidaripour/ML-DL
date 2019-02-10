@@ -7,8 +7,6 @@ from tensorflow.python.framework import ops
 from tf_utils import load_dataset, random_mini_batches, convert_to_one_hot, predict
 
 
-# GRADED FUNCTION: linear_function
-
 def linear_function():
     """
     Implements a linear function:
@@ -33,8 +31,6 @@ def linear_function():
     return result
 
 
-# GRADED FUNCTION: sigmoid
-
 def sigmoid(z):
     """
     Computes the sigmoid of z
@@ -58,8 +54,6 @@ def sigmoid(z):
 
     return result
 
-
-# GRADED FUNCTION: cost
 
 def cost(logits, labels):
     """
@@ -92,8 +86,6 @@ def cost(logits, labels):
     return cost
 
 
-# GRADED FUNCTION: one_hot_matrix
-
 def one_hot_matrix(labels, C):
     """
     Creates a matrix where the i-th row corresponds to the ith class number and the jth column
@@ -122,8 +114,6 @@ def one_hot_matrix(labels, C):
 
     return one_hot
 
-
-# GRADED FUNCTION: ones
 
 def ones(shape):
     """
@@ -163,8 +153,6 @@ Y_train = convert_to_one_hot(Y_train_orig, 6)
 Y_test = convert_to_one_hot(Y_test_orig, 6)
 
 
-# GRADED FUNCTION: create_placeholders
-
 def create_placeholders(n_x, n_y):
     """
     Creates the placeholders for the tensorflow session.
@@ -187,8 +175,6 @@ def create_placeholders(n_x, n_y):
 
     return X, Y
 
-
-# GRADED FUNCTION: initialize_parameters
 
 def initialize_parameters():
     """
@@ -223,8 +209,6 @@ def initialize_parameters():
     return parameters
 
 
-# GRADED FUNCTION: forward_propagation
-
 def forward_propagation(X, parameters):
     """
     Implements the forward propagation for the model: LINEAR -> RELU -> LINEAR -> RELU -> LINEAR -> SOFTMAX
@@ -254,8 +238,6 @@ def forward_propagation(X, parameters):
 
     return Z3
 
-
-# GRADED FUNCTION: compute_cost
 
 def compute_cost(Z3, Y):
     """
