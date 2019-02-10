@@ -20,8 +20,6 @@ import keras.backend as K
 K.set_image_data_format('channels_last')
 K.set_learning_phase(1)
 
-# GRADED FUNCTION: identity_block
-
 def identity_block(X, f, filters, stage, block):
     """
     Implementation of the identity block as defined in Figure 3
@@ -74,8 +72,6 @@ with tf.Session() as test:
     test.run(tf.global_variables_initializer())
     out = test.run([A], feed_dict={A_prev: X, K.learning_phase(): 0})
     print("out = " + str(out[0][1][1][0]))
-
-# GRADED FUNCTION: convolutional_block
 
 def convolutional_block(X, f, filters, stage, block, s=2):
     """
@@ -134,8 +130,6 @@ with tf.Session() as test:
     test.run(tf.global_variables_initializer())
     out = test.run([A], feed_dict={A_prev: X, K.learning_phase(): 0})
     print("out = " + str(out[0][1][1][0]))
-
-# GRADED FUNCTION: ResNet50
 
 def ResNet50(input_shape=(64, 64, 3), classes=6):
     """
