@@ -33,8 +33,6 @@ Y_test = convert_to_one_hot(Y_test_orig, 6).T
 conv_layers = {}
 
 
-# GRADED FUNCTION: create_placeholders
-
 def create_placeholders(n_H0, n_W0, n_C0, n_y):
     """
     Creates the placeholders for the tensorflow session.
@@ -59,8 +57,6 @@ X, Y = create_placeholders(64, 64, 3, 6)
 # print ("X = " + str(X))
 # print ("Y = " + str(Y))
 
-
-# GRADED FUNCTION: initialize_parameters
 
 def initialize_parameters():
     """
@@ -89,8 +85,6 @@ with tf.Session() as sess_test:
     # print("W1 = " + str(parameters["W1"].eval()[1,1,1]))
     # print("W2 = " + str(parameters["W2"].eval()[1,1,1]))
 
-
-# GRADED FUNCTION: forward_propagation
 
 def forward_propagation(X, parameters):
     """
@@ -143,8 +137,6 @@ with tf.Session() as sess:
     # print("Z3 = " + str(a))
 
 
-# GRADED FUNCTION: compute_cost
-
 def compute_cost(Z3, Y):
     """
     Computes the cost
@@ -175,8 +167,6 @@ with tf.Session() as sess:
     a = sess.run(cost, {X: np.random.randn(4,64,64,3), Y: np.random.randn(4,6)})
     # print("cost = " + str(a))
 
-
-# GRADED FUNCTION: model
 
 def model(X_train, Y_train, X_test, Y_test, learning_rate=0.009,
           num_epochs=100, minibatch_size=64, print_cost=True):
