@@ -31,8 +31,6 @@ Y_train = Y_train_orig.T
 Y_test = Y_test_orig.T
 
 
-# GRADED FUNCTION: HappyModel
-
 def HappyModel(input_shape):
     """
     Implementation of the HappyModel.
