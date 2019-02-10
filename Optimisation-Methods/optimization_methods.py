@@ -182,8 +182,6 @@ parameters, v = update_parameters_with_momentum(parameters, grads, v, beta = 0.9
 # print("v[\"db2\"] = " + str(v["db2"]))
 
 
-# GRADED FUNCTION: initialize_adam
-
 def initialize_adam(parameters) :
     """
     Initializes v and s as two python dictionaries with:
