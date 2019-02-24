@@ -179,3 +179,5 @@ def lstm_forward(x, a0, parameters):
 
     return a, y, c, caches
 
+
+
