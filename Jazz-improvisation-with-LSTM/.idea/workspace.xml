@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd069bbb-060e-40e6-8c82-aa76c1421e53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jazz-improvisation-with-LSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jazz-improvisation-with-LSTM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Keras-Tutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Keras-Tutorial/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Residual-Networks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Residual-Networks/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -22,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/Jazz-improvisation-with-LSTM.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
-              <caret line="126" column="7" lean-forward="true" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
+              <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -42,11 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="345">
+                <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -71,6 +80,7 @@
         <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/Jazz-improvisation-with-LSTM.py" />
         <option value="$PROJECT_DIR$/qa.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -160,7 +170,7 @@
     <entry file="file://$PROJECT_DIR$/Jazz-improvisation-with-LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
-          <caret line="126" column="7" lean-forward="true" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
+          <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -181,6 +191,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
