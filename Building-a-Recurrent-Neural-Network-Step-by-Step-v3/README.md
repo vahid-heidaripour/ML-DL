@@ -1,4 +1,4 @@
-# Building a Recurrent Neural Network - Step by Step - v3
+# Building a Recurrent Neural Network - Step by Step
 Recurrent Neural Networks (RNN) are very effective for Natural Language Processing and other sequence tasks because they have "memory". They can read inputs
 ![](https://latex.codecogs.com/gif.latex?x%5E%5Cleft%20%5Clangle%20t%20%5Cright%20%5Crangle) (such as words) one at a time, and remember some information/context through the hidden layer activations that get passed from one time-step to the next. This allows a uni-directional RNN to take information from the past to process later inputs. A bidirection RNN can take context from both the past and the future.
 
