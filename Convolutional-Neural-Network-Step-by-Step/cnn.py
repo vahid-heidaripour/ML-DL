@@ -196,6 +196,23 @@ def create_mask_from_window(x):
     return mask
 
 
+def distribute_value(dz, shape):
+    """
+    Distributes the input value in the matrix of dimension shape
+
+    Arguments:
+    dz -- input scalar
+    shape -- the shape (n_H, n_W) of the output matrix for which we want to distribute the value of dz
+
+    Returns:
+    a -- Array of size (n_H, n_W) for which we distributed the value of dz
+    """
+
+    (n_H, n_W) = shape
+    average = dz / (n_H * n_W)
+    a = np.ones(shape) * average
+
+    return a
 
 
 
